@@ -19,17 +19,17 @@
                                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                                     <span class="block xl:inline">Readers Event</span>
                                 </h1>
-                                <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non
-                                    deserunt
-                                    sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                                    fugiat aliqua.</p>
+                                <p class="mt-6 text-lg leading-8 text-gray-600">Calling all book lovers to engage in lively discussions,
+                                    and connect with fellow bibliophiles from around the world. Don't miss out on this opportunity to
+                                    expand your literary horizons and embark on a journey of endless imagination.
+                                    Sign up now and let the pages come alive!</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                     <img class="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+                        src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                         alt="">
                 </div>
             </div>
@@ -38,36 +38,39 @@
             <div class="overflow-hidden bg-white">
                 <div class="px-4 py-6 sm:px-6">
                     <h3 class="text-lg font-medium leading-7 text-gray-900">Information</h3>
-                    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Hotel details</p>
+                    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Event details</p>
                 </div>
                 <div class="border-t border-gray-100">
                     <dl class="divide-y divide-gray-100">
                         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-sm font-medium text-gray-900">Name</dt>
-                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-                        </div>
-                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-900">Location</dt>
-                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Backend Developer
-                            </dd>
-                        </div>
-                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-900">Category</dt>
-                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                                margotfoster@example.com
-                            </dd>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Weekly Readers Event</dd>
                         </div>
                         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-sm font-medium text-gray-900">About</dt>
-                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Fugiat ipsum ipsum
-                                deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-                                qui
-                                ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident.
-                                Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.</dd>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Looking to explore the fascinating world of books? Join our
+                                book readers community and embark on a literary journey like no other!
+                                Discover captivating stories, engage in thought-provoking discussions,
+                                and connect with fellow readers who share your passion for the written word.
+                                Don't miss out on the opportunity to expand your literary horizons and immerse
+                                 yourself in a world of imagination and knowledge. Sign up today
+                                 and unlock a treasure trove of literary adventures!</dd>
                         </div>
                         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                            <dt class="text-sm font-medium text-gray-900">Price Per Room</dt>
-                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">$120,000</dd>
+                            <dt class="text-sm font-medium text-gray-900">Location</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Colombo Public Library
+                            </dd>
+                        </div>
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium text-gray-900">Contact hoster</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                                chamith@gmail.com
+                            </dd>
+                        </div>
+
+                        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                            <dt class="text-sm font-medium text-gray-900">Registration Price</dt>
+                            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Rs.10,000</dd>
                         </div>
                         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                             <dt class="text-sm font-medium text-gray-900">Reserve</dt>
@@ -84,7 +87,7 @@
             <div class="bg-white">
                 <div class="px-6 pt-6">
                     <h3 class="text-lg font-medium leading-7 text-gray-900">Reviews</h3>
-                    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Hotel reviews</p>
+                    <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Event reviews</p>
                     <div class="mt-6 space-y-10 divide-y divide-gray-200 border-b border-t border-gray-200 pb-10">
                         <div class="pt-10 lg:grid lg:grid-cols-12 lg:gap-x-8">
                             <div
@@ -128,21 +131,23 @@
                                 </div>
 
                                 <div class="mt-4 lg:mt-6 xl:col-span-2 xl:mt-0">
-                                    <h3 class="text-sm font-medium text-gray-900">Can&#039;t say enough good things</h3>
+                                    <h3 class="text-sm font-medium text-gray-900">BEST INDOOR EVENT EVER</h3>
 
                                     <div class="mt-3 space-y-6 text-sm text-gray-500">
-                                        <p>I was really pleased with the overall shopping experience. My order even
-                                            included a little personal, handwritten note, which delighted me!</p>
-                                        <p>The product quality is amazing, it looks and feel even better than I had
-                                            anticipated. Brilliant stuff! I would gladly recommend this store to my
-                                            friends. And, now that I think of it... I actually have, many times!</p>
+                                        <p>I had an incredible experience attending the readers event.
+                                            The organizers went above and beyond to make it memorable.
+                                            The atmosphere was captivating, and the speakers were inspiring.</p>
+                                        <p>The selection of books was outstanding,
+                                            and I couldn't resist purchasing a few.
+                                             The event left me feeling motivated and excited to dive into the world of literature.
+                                              I highly recommend attending this event to fellow book lovers!</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div
                                 class="mt-6 flex items-center text-sm lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:mt-0 lg:flex-col lg:items-start xl:col-span-3">
-                                <p class="font-medium text-gray-900">Risako M</p>
+                                <p class="font-medium text-gray-900">Thisok M</p>
                                 <time datetime="2021-01-06"
                                     class="ml-4 border-l border-gray-200 pl-4 text-gray-500 lg:ml-0 lg:mt-2 lg:border-0 lg:pl-0">May
                                     16, 2021</time>
