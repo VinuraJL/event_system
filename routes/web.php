@@ -13,33 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-
-
 });
-
-Route::get('hotel/{id}', function($id){
-    return view('hotel.show', [
-        'hotel' => $id
+Route::get('event/{id}', function ($id) {
+    return view('event.show', [
+        'event' => $id
     ]);
-})
-//->where('id', '[0-9]+')
-->name('hotel.show');
+}) ->name('event.show');
+
+Route::get('reserve/{id}', function($id){
+    return view('event.reservation', [
+        'reserve' => $id
+    ]);
+})->name('event.reservation');
+
+
 
 Route::get('/', function () {
     return view('home');
-})->name('home');
+})-> name('home');
