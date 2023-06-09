@@ -18,15 +18,24 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
+
     Route::get('/dashboard', function () {
+
+
+
         return view('dashboard');
+
     })->name('dashboard');
 });
+
+
 Route::get('event/{id}', function ($id) {
     return view('event.show', [
         'event' => $id
     ]);
 }) ->name('event.show');
+
+
 
 Route::get('reserve/{id}', function($id){
     return view('event.reservation', [
