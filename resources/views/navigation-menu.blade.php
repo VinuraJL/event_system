@@ -101,6 +101,30 @@
                             @endif
                         </x-slot>
                         <x-slot name="content">
+
+                             <!-- Administration -->
+                             <div class="block px-4 py-2 text-xs text-gray-400">
+                                {{ __('Administration') }}
+                            </div>
+
+                            <x-dropdown-link href="{{ route('admin.event.index') }}">
+                                {{ __('Event') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link href="{{ route('admin.category.index') }}">
+                                {{ __('Category') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link href="{{ route('admin.reservation.index') }}">
+                                {{ __('Reservation') }}
+                            </x-dropdown-link>
+
+                            <x-dropdown-link href="{{ route('admin.user.index') }}">
+                                {{ __('User') }}
+                            </x-dropdown-link>
+
+                            <div class="border-t border-gray-200"></div>
+
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
@@ -108,12 +132,14 @@
                             <x-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
+
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
                                     {{ __('API Tokens') }}
                                 </x-dropdown-link>
                             @endif
                             <div class="border-t border-gray-200"></div>
+
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
@@ -127,6 +153,7 @@
                 </div>
                 @endauth
             </div>
+
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
