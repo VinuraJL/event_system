@@ -102,6 +102,7 @@
                         </x-slot>
                         <x-slot name="content">
 
+                           @can('accessAdministration')
                              <!-- Administration -->
                              <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Administration') }}
@@ -124,6 +125,8 @@
                             </x-dropdown-link>
 
                             <div class="border-t border-gray-200"></div>
+
+                            @endcan
 
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
