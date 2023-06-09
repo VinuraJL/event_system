@@ -21,19 +21,37 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
             'photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:1024'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:255'],
+            'address' => ['nullable'],
+            'country' => ['nullable'],
+            'city' => ['nullable'],
+            'state_province' => ['nullable'],
+            'zip_code' => ['nullable'],
         ])->validateWithBag('updateProfileInformation');
 
         if (isset($input['photo'])) {
             $user->updateProfilePhoto($input['photo']);
         }
 
-        if ($input['email'] !== $user->email &&
-            $user instanceof MustVerifyEmail) {
+        if (
+            $input['email'] !== $user->email &&
+            $user instanceof MustVerifyEmail
+        ) {
             $this->updateVerifiedUser($user, $input);
         } else {
             $user->forceFill([
                 'name' => $input['name'],
                 'email' => $input['email'],
+                'first_name' => $input['first_name'],
+                'last_name' => $input['last_name'],
+                'phone' => $input['phone'],
+                'address' => $input['address'],
+                'country' => $input['country'],
+                'city' => $input['city'],
+                'state_province' => $input['state_province'],
+                'zip_code' => $input['zip_code'],
             ])->save();
         }
     }
@@ -48,6 +66,14 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
         $user->forceFill([
             'name' => $input['name'],
             'email' => $input['email'],
+            'first_name' => $input['first_name'],
+            'last_name' => $input['last_name'],
+            'phone' => $input['phone'],
+            'address' => $input['address'],
+            'country' => $input['country'],
+            'city' => $input['city'],
+            'state_province' => $input['state_province'],
+            'zip_code' => $input['zip_code'],
             'email_verified_at' => null,
         ])->save();
 
